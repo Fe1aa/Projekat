@@ -8,25 +8,33 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Shopping</title>
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav>
         <div class="navdiv">
           <div class="nav-logo">
             <img src="#" alt="Logo" />
           </div>
           <ul>
-            <li><a href="#" class="nav-link">Home</a></li>
-            <li><a href="#" class="nav-link">Products</a></li>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
             <li>
               <div class="dropdown">
                 <a class="nav-link">Categories</a>
                 <div class="dropdown-content">
-                  <a href="#">Item 1</a>
-                  <a href="#">Item 2</a>
-                  <a href="#">Item 3</a>
+                  <a href="#">Fedora</a>
+                  <a href="#">Cowboy</a>
+                  <a href="#">Baseball</a>
+                  <a href="#">Beanie</a>
+                  <a href="#">Top hat</a>
                 </div>
               </div>
             </li>
@@ -42,8 +50,51 @@
           <h1 class="header-text">Hat trick</h1>
           <p>Where style starts at the top</p>
         </div>
-        <button class="buy-now">Buy now</button>
+        <button class="cta">Buy now</button>
       </div>
     </header>
+    <main>
+      <div id="products">
+        <h1>What we offer</h1>
+        <div class="cards">
+          <div class="card">
+            <img src="images/Fedora.jpeg" alt="Fedora" />
+            <h1>Fedora</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <button class="buy-now">Buy now!</button>
+          </div>
+          <div class="card">
+            <img src="images/Fedora.jpeg" alt="Fedora" />
+            <h1>Fedora</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <button class="buy-now">Buy now!</button>
+          </div>
+          <div class="card">
+            <img src="images/Fedora.jpeg" alt="Fedora" />
+            <h1>Fedora</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <button class="buy-now">Buy now!</button>
+          </div>
+          <div class="card">
+            <img src="images/Fedora.jpeg" alt="Fedora" />
+            <h1>Fedora</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <button class="buy-now">Buy now!</button>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
