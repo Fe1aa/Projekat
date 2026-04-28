@@ -2,8 +2,9 @@
   --blue: #003049; /* soft light background */
   --red: #d62828; /* soft amber */
   --orange: #f77f00; /* success / trust (green) */
-  --text: #f2f2f2; /* main text */
+  --white: #f2f2f2; /* main text */
   --maize: #fcbf49;
+  --gray: #444444;
 }
 
 @font-face {
@@ -33,6 +34,15 @@ header {
   flex-direction: column;
 }
 
+.logo {
+  font-family: "Roboto";
+  color: var(--orange);
+}
+
+.logo span {
+  color: var(--white);
+}
+
 .center {
   display: flex;
   align-items: center;
@@ -43,7 +53,7 @@ header {
 
 .header-texts {
   text-align: center;
-  color: var(--maize);
+  color: var(--orange);
 }
 
 .header-texts h1 {
@@ -53,9 +63,14 @@ header {
   font-weight: 400;
 }
 
+.header-texts span {
+  color: var(--white);
+}
+
 .header-texts p {
   font-size: 24px;
   font-family: "Poppins", sans-serif;
+  color: var(--maize);
 }
 
 nav {
@@ -139,7 +154,7 @@ nav li {
 
 .cta:hover {
   background-color: var(--red);
-  color: var(--text);
+  color: var(--white);
   transform: translateY(-2px);
 }
 
@@ -217,7 +232,7 @@ nav li {
   flex-direction: column;
   align-items: center;
   padding: 15px;
-  color: var(--text);
+  color: var(--white);
   transition: box-shadow 0.3s ease;
 }
 
@@ -227,6 +242,8 @@ nav li {
 
 .card img {
   border-radius: 8px;
+  max-width: 200px;
+  height: auto;
 }
 
 .card h1 {
@@ -261,4 +278,207 @@ nav li {
 
 .card button:active {
   transform: scale(0.95);
+}
+
+#reviews {
+  width: 100%;
+  min-height: 1000px;
+  background-color: var(--maize);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+#reviews > h1 {
+  font-family: "Poppins";
+  font-size: 60px;
+  color: var(--orange);
+  margin-bottom: 60px;
+}
+
+.review {
+  width: 700px;
+  min-height: auto;
+  border-radius: 20px;
+  background-color: var(--white);
+  padding: 20px;
+  border: 2px solid var(--orange);
+  box-shadow: 0 15px 35px rgba(0, 48, 73, 0.3);
+  margin: 20px 0;
+  transition: all 0.3s ease;
+}
+
+.review:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 50px rgba(0, 48, 73, 0.1);
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.profile img {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review p {
+  line-height: 1.6;
+  color: var(--gray);
+}
+
+.review h3 {
+  margin: 10px 0;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+.stars {
+  color: var(--orange);
+}
+
+.stats-section {
+  background-color: #003049; /* Prussian Blue */
+  padding: 80px 0;
+  border-top: 4px solid #f77f00; /* Orange accent line */
+  border-bottom: 4px solid #d62828; /* Red accent line */
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Good for mobile */
+  gap: 30px;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.stat-item h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem; /* Big, bold numbers */
+  font-weight: 900;
+  color: #fcbf49; /* Maize Gold */
+  margin: 0;
+}
+
+.stat-item p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.main-footer {
+  background-color: var(--blue); /* #003049 */
+  color: #ffffff;
+  padding: 80px 10% 30px 10%;
+  border-top: 6px solid var(--red); /* That bold red accent */
+  font-family: "Roboto", sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Important for mobile! */
+  gap: 40px;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-col h4 {
+  color: var(--orange); /* #f77f00 */
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer-logo span {
+  color: var(--white);
+}
+
+.footer-col p {
+  line-height: 1.6;
+  color: #bdc3c7; /* Softer grey for readability */
+  font-size: 0.95rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col li {
+  margin-bottom: 12px;
+}
+
+.footer-col a {
+  text-decoration: none;
+  color: #bdc3c7;
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover {
+  color: var(--orange); /* Glows orange on hover */
+}
+
+/* Newsletter Input Styling */
+.newsletter-form {
+  display: flex;
+  margin-top: 15px;
+}
+
+.newsletter-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  width: 100%;
+}
+
+.newsletter-form button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .newsletter-form {
+    justify-content: center;
+  }
 }
